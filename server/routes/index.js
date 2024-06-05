@@ -1,5 +1,7 @@
 import express from "express";
 const router = express.Router();
-import { dynamic_forms_controller } from "../controllers/dynamic_forms.controller.js";
+import { dynamicFormsRoute } from "./dynamicForms.routes.js";
+
+router.use("/forms", dynamicFormsRoute);
 
 export { router as routes };
