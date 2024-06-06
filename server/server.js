@@ -3,6 +3,7 @@ const app = express();
 import cors from "cors";
 import { routes } from "./routes/index.js";
 import { convertToApiError, handleError } from "./middlewares/errorHandlingMiddleware.js";
+import "dotenv/config";
 
 // CORS
 const corsOrigin = process.env.CORS_ORIGIN;
